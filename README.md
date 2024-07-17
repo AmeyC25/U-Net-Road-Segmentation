@@ -10,14 +10,11 @@ The aim of this project is road detection from satellite images using a variant 
 U-net is an encoder-decoder type network architecture for image segmentation. The name of the architecture comes from its unique shape, where the feature maps from convolution part in downsampling step are fed to the up-convolution part in up-sampling step. 
 This model is a slight modification of original U-Net architecture. The details of the architecture can be clearly seen in the notebook as the output of the "model.summary()" cell.
 
-![](images/u-net-architecture.png)
+You can checkout the u-Net architechture as shown in the image uploaded
 
 
 
-
-
-The TensorBoard graph is shown below:
-![](images/U-Net-Graph.png)
+The TensorBoard graph is shown in the U-Net_Graph.png file uploaded.
 
 
 
@@ -28,21 +25,18 @@ The inputs are resized to 256x256 from the original size of 600x600. The ground 
 
 ### Training
 
-The model was trained for 30 epochs and took about 3 hours on colab GPU. After 30 epochs, the training Dice score and Jaccard index were 0.8918 and  0.9754. Corresponding validation metrics were 0.7533 and 0.9527.
-The training vs validation loss is shown below :
+The model was trained for 30 epochs and took about 3 hours on colab GPU. After 30 epochs, the training Dice score and Jaccard index were 0.8918 and  0.9754 respectively. Corresponding validation metrics were 0.7533 and 0.9527.
+The training vs validation loss is shown in the loss.jpg file Uploaded.
 
 
-![](images/Loss.jpeg)
+
 
 
 
 
 ## Results
 
-The following images show the comparison of the original satellite image, ground truth, and it's corresponding prediction:
-
-![](images/1.JPG)
-![](images/2.JPG)
+The images 1 & 2 uploaded show the comparison of the original satellite image, ground truth, and it's corresponding prediction.
 
 ## References
 
